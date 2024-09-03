@@ -11,12 +11,14 @@ function App() {
     return (
         <>
             <Swiper
-                className="mySwiper"
                 direction="vertical"
                 pagination={{
                     clickable: true,
                 }}
-                mousewheel={true}
+                mousewheel={{
+                    releaseOnEdges: true,
+                    noMousewheelClass: "scrollFree",
+                }}
                 modules={[Pagination, Mousewheel]}
             >
                 <SwiperSlide>
@@ -24,7 +26,7 @@ function App() {
                         <MainSection></MainSection>
                     </AppPage>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="scrollFree">
                     <AppPage>
                         <About></About>
                     </AppPage>
