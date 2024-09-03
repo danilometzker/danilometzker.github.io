@@ -1,0 +1,21 @@
+.sectionAbout {
+    width: 70vw;
+    height: 80vh;
+    background-color: #000;
+    border-radius: 16px;
+    background-image: url("/src/assets/bg3.gif");
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+
+    &.activeSection {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    @media (max-width: 578px) {
+        width: 90%;
+        height: 90%;
+    }
+}
