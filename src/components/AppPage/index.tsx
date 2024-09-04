@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const AppPage = ({ children }: any) => {
     const swiper = useSwiper();
-    const [canPrev, setCanPrev] = useState(false);
+    const [canPrev, setCanPrev] = useState(true);
     const [touches, setTouches] = useState<{
         x: number | undefined;
         y: number | undefined;
