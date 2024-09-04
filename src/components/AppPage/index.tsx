@@ -19,17 +19,6 @@ const AppPage = ({ children }: any) => {
         } else {
             setCanPrev(false);
         }
-
-        // if (
-        //     event.currentTarget.scrollHeight -
-        //         (event.currentTarget.scrollTop +
-        //             event.currentTarget.clientHeight) ==
-        //     0
-        // ) {
-        //     setCanNext(true);
-        // } else {
-        //     setCanNext(false);
-        // }
     };
 
     const handleWheel = (event: React.WheelEvent<HTMLDivElement>) => {
@@ -52,7 +41,6 @@ const AppPage = ({ children }: any) => {
             if (touches.y < event.changedTouches[0].screenY) {
                 if (event.currentTarget.scrollTop == 0) {
                     swiper.slidePrev();
-                    console.log("tried do swipe prev", event.currentTarget);
                 }
             } else {
                 if (
@@ -61,7 +49,6 @@ const AppPage = ({ children }: any) => {
                             event.currentTarget.clientHeight) ==
                     0
                 ) {
-                    console.log("tried do swipe next", event.currentTarget);
                     swiper.slideNext();
                 }
             }
@@ -77,7 +64,7 @@ const AppPage = ({ children }: any) => {
             className="appPage"
             onScroll={handleInsideScroll}
             onWheel={handleWheel}
-            onTouchMove={handleTouch}
+            onTouchEnd={handleTouch}
         >
             {children}
         </div>
