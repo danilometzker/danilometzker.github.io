@@ -5,7 +5,7 @@ import "swiper/scss/pagination";
 import AppPage from "./components/AppPage";
 import MainSection from "./components/Sections/MainSection";
 import About from "./components/Sections/About";
-import { Pagination, Mousewheel } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 
 function App() {
     return (
@@ -15,11 +15,8 @@ function App() {
                 pagination={{
                     clickable: true,
                 }}
-                mousewheel={{
-                    releaseOnEdges: true,
-                    noMousewheelClass: "scrollFree",
-                }}
-                modules={[Pagination, Mousewheel]}
+                modules={[Pagination]}
+                noSwipingClass="scrollFree"
             >
                 <SwiperSlide>
                     <AppPage>
