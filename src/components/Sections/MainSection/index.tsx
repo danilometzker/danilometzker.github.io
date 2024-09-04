@@ -5,9 +5,11 @@ const MainSection = () => {
     // const swiperSlide = useSwiperSlide();
 
     return (
-        <div className="sectionMain">
-            <div className="sectionTitle">
-                <h1>Danilo Metzker</h1>
+        <div className="mainContainer">
+            <div className="sectionMain">
+                <div className="sectionTitle">
+                    <h1>Danilo Metzker</h1>
+                </div>
             </div>
         </div>
     );

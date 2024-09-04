@@ -7,13 +7,13 @@
     overflow: auto;
 
     &.activeSection {
-        width: 100vw;
+        width: 100%;
         // height: 100vh;
         border-radius: 0;
     }
 
     @media (max-width: 578px) {
-        width: 90%;
+        width: 100%;
         // height: 90%;
     }
 }

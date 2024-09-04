@@ -64,7 +64,7 @@ const AppPage = ({ children }: any) => {
             className="appPage"
             onScroll={handleInsideScroll}
             onWheel={handleWheel}
-            onTouchEnd={handleTouch}
+            onTouchMove={handleTouch}
         >
             {children}
         </div>

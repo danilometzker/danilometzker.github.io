@@ -1,40 +1,48 @@
-.sectionMain {
-    width: 70vw;
-    height: 80vh;
-    background-color: #000;
-    border-radius: 16px;
-    background-image: url("/src/assets/bg2.gif");
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    @media (max-width: 578px) {
-        width: 90%;
-        height: 90%;
-    }
-
-    .sectionTitle {
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.2);
+    .sectionMain {
+        width: 70vw;
+        height: 80vh;
+        background-color: #000;
         border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(6.6px);
-        -webkit-backdrop-filter: blur(6.6px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        position: absolute;
-        left: -40px;
-        top: 80px;
-        padding: 32px 120px;
+        background-image: url("/src/assets/bg2.gif");
+        background-size: cover;
+        background-position: center;
+        position: relative;
 
         @media (max-width: 578px) {
-            padding: 16px;
-            left: 0;
-            border-radius: 0 16px 16px 0;
+            width: 90%;
+            height: 90%;
         }
 
-        h1 {
-            text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
-                1px 1px 1px rgba(0, 0, 0, 0.5);
+        .sectionTitle {
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6.6px);
+            -webkit-backdrop-filter: blur(6.6px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: absolute;
+            left: -40px;
+            top: 80px;
+            padding: 32px 120px;
+
+            @media (max-width: 578px) {
+                padding: 16px;
+                left: 0;
+                border-radius: 0 16px 16px 0;
+            }
+
+            h1 {
+                text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+                    1px 1px 1px rgba(0, 0, 0, 0.5);
+            }
         }
     }
 }
